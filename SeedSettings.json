@@ -1,0 +1,19 @@
+{
+  "api": {
+    "include": {
+      "*": "*"
+    }
+  },
+  "extend": {
+    "models": [],
+    "routes": [],
+    "schema_types": [],
+    "serializers": []
+  },
+  "graphql": {
+    "include": {
+      "*": "*"
+    }
+  },
+  "platform": "django"
+}

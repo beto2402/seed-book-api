@@ -1,0 +1,93 @@
+
+
+## FILES
+
+- model: models.File
+  pk: 1
+  fields:
+    url: "https://rcdn.rolloid.net/uploads/2017/05/carpincho-capibara-animal-se-lleva-bien-con-todos-banner-696x364.jpg"
+    size: 0
+    name: "file"
+
+- model: models.File
+  pk: 2
+  fields:
+    url: "https://dam.ngenespanol.com/wp-content/uploads/2021/02/capibara.jpg"
+    size: 0
+    name: "file"
+
+- model: models.File
+  pk: 3
+  fields:
+    url: "https://misanimales.com/wp-content/uploads/2018/11/capibaras.jpg"
+    size: 0
+    name: "file"
+
+- model: models.File
+  pk: 4
+  fields:
+    url: "https://pbs.twimg.com/media/ETFbpC3WsAE1pdx.jpg"
+    size: 0
+    name: "file"
+
+    
+
+## USERS
+
+- model: models.user
+  pk: 1
+  fields:
+    username: "capibara@email.com"
+    first_name: "david"
+    last_name: "rangel"
+    email: "capibara@email.com"
+    password: "pbkdf2_sha256$150000$jMOqkdOUpor5$kU/QofjBsopM+CdCnU2+pROhtnxd5CZc7NhUiXNTMc0="
+    is_active: true
+    is_superuser: false
+    is_staff: false
+    last_login: "2020-01-01T12:00:00+00:00"
+    date_joined: "2020-01-01T12:00:00+00:00"
+    profile_image: 1
+
+- model: models.user
+  pk: 2
+  fields:
+    username: "otrousuario@email.com"
+    first_name: "erick"
+    last_name: "rivas"
+    email: "otrousuario@email.com"
+    password: "pbkdf2_sha256$150000$jMOqkdOUpor5$kU/QofjBsopM+CdCnU2+pROhtnxd5CZc7NhUiXNTMc0="
+    is_active: true
+    is_superuser: false
+    is_staff: false
+    last_login: "2020-01-01T12:00:00+00:00"
+    date_joined: "2020-01-01T12:00:00+00:00"
+    profile_image: 4
+
+## POSTS
+
+- model: models.post
+  pk: 1
+  fields:
+    content: "Contenido 1"
+    picture: 2
+    created_by:  1
+    liked_by: [1,2]
+
+- model: models.post
+  pk: 2
+  fields:
+    content: "Contenido 2"
+    picture: 3
+    created_by:  1
+    liked_by: [2]
+
+
+## COMMENTS
+
+- model: models.comment
+  pk: 1
+  fields:
+    content: "Un comentario"
+    created_by:  1
+    post:  1
